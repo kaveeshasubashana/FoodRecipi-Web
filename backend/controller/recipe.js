@@ -5,7 +5,11 @@ const getRecipe = (req,res)=>{
     res.json({message:"hello"})
 }
 const addRecipe = (req,res)=>{
-    res.json({message:"hello"})
+    const {title,ingredients,instruction,time}=req.body
+
+    if(!title || !ingredients || instruction){
+        res.json({message:"Requierd filed cant be empty"})
+    }
 }
 const editRecipe = (req,res)=>{
     res.json({message:"hello"})
