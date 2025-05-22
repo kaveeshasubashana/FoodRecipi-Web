@@ -4,7 +4,7 @@ const dotenv=require("dotenv").config()
 
 const PORT = process.env.PORT || 3000
 
-app.use("/recipe",require("./routes/recipe")) //get all the recipies
+app.use("/recipe",require("./routes/recipe")) 
 
 app.listen(PORT,(err)=>{
  console.log(`app is litining on port ${PORT}`)
