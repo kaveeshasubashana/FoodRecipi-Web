@@ -18,4 +18,4 @@ cd client
 npm install
 npm run dev / npm start
 
-🔐 Environment Variables (create a .env file in server/) MONGO_URI=your_mongodb_connection_string JWT_SECRET=your_jwt_secret
+
